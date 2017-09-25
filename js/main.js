@@ -33,7 +33,7 @@ function changeFontColor(){
     outputBlock.style.color = selectState;
 }
 
-//
+// Изменить размер шрифта в виводе
 var fontSize = document.getElementById('fontSize');
 fontSize.addEventListener('change', changeFontSize);
 fontSize.addEventListener('mousemove', changeFontSize);
@@ -42,7 +42,7 @@ function changeFontSize(){
     var selectState = fontSize.value;
     outputBlock.style.fontSize = selectState + 'px';
 }
-// 
+// Изменить ширину шрифта в виводе
 var fontWeight = document.getElementById('fontWeight');
 fontWeight.addEventListener('change', changeFontWeight);
 fontWeight.addEventListener('mousemove', changeFontWeight);
