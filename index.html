@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Text Editor</h1>
+    </header>
+
+    <div class="controls">
+        <div class="controls-block">
+            <label for="size">Font Size:</label>
+            <input type="range" name="size" id="fontSize" min="6" max="32" data-sizing="px" value="14">
+            <label for="size">Font Weight:</label>
+            <input type="range" name="weight" id="fontWeight" min="1" max="9"  value="4">
+            <label for="color">Font Color:</label>
+            <input type="color" id="fontColor" name="color" value="#ffffff">
+            <label for="font-family">Font Family:</label>
+            <select id="font-family">
+                <option value="Roboto">Roboto</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Arial">Arial</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times">Times</option>
+            </select>
+            <label for="font-family">Font Style:</label>
+            <select id="font-style">
+                <option value="normal">normal
+                <option value="italic">italic
+                <option value="oblique"> oblique
+            </select>
+        </div>
+    </div>
+
+    <div class="input_block">
+        <textarea name="" cols="30" rows="10" class="ib-input" id="ib-input"></textarea>
+    </div>
+
+    <div class="output-block">
+        <textarea name="" cols="30" rows="10" class="ib-input" id="output-block" disabled=disabled></textarea>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
